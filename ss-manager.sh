@@ -2,7 +2,7 @@
 
 CONFIG_PATH="/usr/local/etc/xray/config.json"
 WEB_DIR="/var/www/html/configs"
-DOMAIN="your-vps-ip" # သင့် Domain သို့မဟုတ် IP ပြောင်းပါ
+DOMAIN="152.42.246.244" # သင့် Domain သို့မဟုတ် IP ပြောင်းပါ
 
 mkdir -p $WEB_DIR
 
