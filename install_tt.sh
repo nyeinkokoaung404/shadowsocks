@@ -28,6 +28,8 @@ IP_ADDR=$(curl -s ifconfig.me)
 
 # ၄။ SSL Certificate ထုတ်ယူခြင်း
 echo -e "${GREEN}>>> SSL Certificate ထုတ်ယူနေပါပြီ...${NC}"
+sudo mkdir -p /etc/letsencrypt/archive/
+sudo mkdir -p /etc/letsencrypt/live/
 sudo certbot certonly --standalone -d $DOMAIN --email $EMAIL --agree-tos --non-interactive --quiet
 
 # ၅။ Permission ပြင်ဆင်ခြင်း
